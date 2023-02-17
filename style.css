@@ -1,0 +1,129 @@
+.ok{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 1px;
+}
+.container{
+ display:flex;
+ gap:10px
+}
+.dpage{
+  display:flex;
+}
+.sizer img{
+  width: 600px;
+  height: 600px ;
+}
+.loginpage{
+  width:900px;
+  display:flex;
+  background-color:white;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+}
+h1{
+  text-align:center;
+}
+.iconcontainer{
+  display:flex;
+  gap:20px;
+}
+.iconcontainer img{
+  width:40px;
+  height:40px;
+  border:none;
+}
+.iconcontainer img:hover{
+  width:42px;
+  height:42px;
+  border-radius:8px;
+  box-shadow:2px 2px 2px 2px grey;
+}
+.login{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+
+}
+.login input{
+  border-radius:6px;
+  border:1px solid black;
+  width:250px;
+}
+.login label{
+  font-size:16px;
+}
+.forgot{
+  width:250px;
+  display:flex;
+  background-color:white;
+  align-items:center; 
+}
+h5{
+  margin-left:30px;
+}
+button{
+  width:250px;
+  border-radius:8px;
+  height:40px;
+  background-color:white;
+  color:#ff0099;
+}
+button:hover{
+  font-weight:bold;
+  font-size:16px;
+  color:#ff0099;
+  
+}
+.rise{
+  display:none;
+}
+.switch{
+  position: relative;
+  display: inline-block ;
+  width: 60px;
+  height: 34px;
+}
+.switch input{
+  opacity: 0;
+  height: 0%;
+  width: 0;
+}
+.slider{
+ position: absolute;
+ cursor: pointer;
+ top: 0%;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ background-color:white;
+ transition: 0.4s; 
+ border-radius: 64px;
+ border:1px solid  black;
+}
+.slider::before{
+  position: absolute;
+  content:"";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ff0099;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked+.slider
+{
+  background-color:#0a0057;
+}
+input:checked+.slider::before{
+  transform:translateX(26px) ;
+}
+
+a {
+ color:#ff0099;
+}
